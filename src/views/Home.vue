@@ -33,14 +33,18 @@
           mdi-delete
         </v-icon>
       </button>
-      <footer>
-      </footer>
+      <FooterComponent />
     </v-row>
   </v-main>
 </template>
 <script>
+import FooterComponent from "@/components/FooterComponent"
+
 export default {
   name: "Home",
+  components: {
+    FooterComponent
+  }
 };
 </script>
 <style lang="scss">
