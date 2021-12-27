@@ -3,12 +3,14 @@
     <v-card-text>
         <v-btn
           v-for="icon in icons"
-          :key="icon"
+          :key="icon.name"
+          :href="icon.link"
+          target="_blank"
           class="mx-4 white--text"
           icon
         >
           <v-icon size="24px">
-            {{ icon }}
+            {{ icon.name }}
           </v-icon>
         </v-btn>
       </v-card-text>
@@ -25,8 +27,8 @@ export default {
   name: "FooterComponent",
    data: () => ({
       icons: [
-        'mdi-linkedin',
-        'mdi-mail',
+        {name: 'mdi-linkedin', link: 'https://www.linkedin.com/in/juliameloalbuquerque/'},
+        {name: 'mdi-github', link: 'https://github.com/juliathemelo'}
       ],
     })
 };

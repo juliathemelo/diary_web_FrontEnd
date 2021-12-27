@@ -13,26 +13,34 @@
     </v-col>
     <h2 id="tutorial_button"> Select The Function: </h2>
     <v-row class="button_home">     
-      <button id="button_plus_diary">
-        <v-icon aria-hidden="false" id="icon_plus_home">
-          mdi-plus
-        </v-icon>
-      </button>
-       <button id="button_edit_diary">
-        <v-icon aria-hidden="false" id="icon_plus_edit">
-          mdi-pencil
-        </v-icon>
-      </button>
-      <button id="button_info_diary">
-        <v-icon aria-hidden="false" id="icon_plus_home">
-          mdi-folder-account-outline
-        </v-icon>
-      </button>
-       <button id="button_delete_diary">
-        <v-icon aria-hidden="false" id="icon_plus_home">
-          mdi-delete
-        </v-icon>
-      </button>
+      <router-link to="/add">
+        <v-btn id="button_plus_diary" style="display: inline-block">
+          <v-icon  id="icon_plus_home">
+            mdi-plus
+          </v-icon>
+        </v-btn>
+      </router-link>
+      <router-link to="/edit">
+        <v-btn id="button_edit_diary" style="display: inline-block">
+          <v-icon aria-hidden="false" id="icon_plus_edit">
+            mdi-pencil
+          </v-icon>
+        </v-btn>
+      </router-link>
+      <router-link to="/list">
+        <v-btn id="button_info_diary" style="display: inline-block">
+          <v-icon aria-hidden="false" id="icon_plus_home">
+            mdi-folder-account-outline
+          </v-icon>
+        </v-btn>
+      </router-link>
+      <router-link to="/delete">
+        <v-btn id="button_delete_diary" style="display: inline-block">
+          <v-icon aria-hidden="false" id="icon_plus_home">
+            mdi-delete
+          </v-icon>
+        </v-btn>
+      </router-link>
       <FooterComponent />
     </v-row>
   </v-main>
