@@ -35,7 +35,7 @@
           name="input-7-4"
           label="Solo textarea"
           counter
-          style="resize: none;"
+          style="resize: none"
         >
         </v-textarea>
       </v-col>
